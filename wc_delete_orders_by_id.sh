@@ -4,5 +4,5 @@
 
 for id in $(cat order_delete_ids.txt)
 do
-  wp wc shop_order delete $id $id --user=1 --force --porcelain
+  wp wc shop_order delete $id --user=1 --force=1
 done
