@@ -4,5 +4,5 @@
 
 for id in $(cat order_ids.txt)
 do
-  wp wc shop_order get $id $id --user=1 --format=json > $id.json
+  wp wc shop_order get $id --user=1 --format=json > $id.json
 done
